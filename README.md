@@ -8,19 +8,18 @@ Demo: https://barrystone.github.io/QRcode_generator/
 
 QR 碼產生器 (QR Code Generator)
 
-<div style="display:flex; justify-content:center;">
+<!-- <div style="display:flex; justify-content:center;">
  <img src="https://raw.githubusercontent.com/barrystone/QRcode_generator/master/screenshot/full-screen.png" alt="Full Screen" style="max-width:500px;"/>
 </div>
-<b style="display:block;text-align:center; ">Full Screen</n>
-
-<br/>
-<br/>
+<b style="display:block;text-align:center; ">Full Screen</n> -->
 <br/>
 
 <div style="display:flex; justify-content:center;">
+
 <img src="https://raw.githubusercontent.com/barrystone/QRcode_generator/master/screenshot/smartphone.png" alt="Smartphone" width="200"/>
 
 <img src="https://raw.githubusercontent.com/barrystone/QRcode_generator/master/screenshot/smartphone_savebtn.png" alt="Smartphone_Button" width="200"/>
+
 </div>
 <b style="display:block; text-align:center;">Smartphone</n>
 <br/>

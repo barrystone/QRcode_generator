@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Generator</title>
+    <title>QR Code 產生器 (Generator)</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
     <script src="./js/script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
         integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
@@ -34,9 +35,49 @@
     </header>
 
     <main>
-        <div class="flex flex-col-reverse align-center justify-center m-auto md:max-w-4xl md:flex-row">
-            <div class="w-full md:w-2/3 mr-24">Div 1</div>
-            <div class="w-full md:1/3 self-center">Div 2</div>
+        <div class="flex flex-col-reverse align-center justify-center m-auto md:max-w-4xl md:flex-row p-10">
+            <div class="w-full md:w-2/3 mr-24">
+                <h1 class="text-3xl font-bold mb-1 md:text-4xl">
+                    QR 碼產生器
+                </h1>
+                <h2 class="text-xl  mb-5 md:text-xl">
+                    QR Code Generator
+                </h2>
+                <p class="mb-1 text-base">
+                    QR 碼讓智慧型手機傻用者可以簡單且快速地讀取你的網站。
+                </p>
+                <p class="text-sm">
+                    QR Code allow smartphone users to access your website aimply and quickly.
+                </p>
+                <p class="mt-4 mb-1 text-base">
+                    在下方輸入您的網站連結產生 QR 碼並下載照片。
+                </p>
+                <p class="text-sm mb-5">
+                    Enter your URL below to generate a QR Code and download the image.
+                </p>
+                <form id="generator-form" class="" mt-4>
+                    <input id="url" type="url" placeholder="輸入連結 (Enter a URL)"
+                        class="w-full border-2 border-grey-200 rounded p-3 text-grey-dark mr-2 focus:outline-none mb-5" />
+                    <select id="size"
+                        class="w-full border-2 border-grey-200 rounded p-3 text-grey-dark mr-2 focus:outline-none">
+                        <option value="100">100x100</option>
+                        <option value="200" selected>200x200</option>
+                        <option value="300">300x300</option>
+                        <option value="400">400x400</option>
+                        <option value="500">500x500</option>
+                        <option value="600">600x600</option>
+                        <option value="700">700x700</option>
+                    </select>
+
+                    <button class="bg-slate-700 rounded w-full text-white py-3 px-4 mt-5 hover:bg-black" type="submit">
+                        產生QR碼 (Generator QR Code)
+                    </button>
+                </form>
+            </div>
+            <div class="w-full md:1/3 self-center">
+                <img src="./img//qr-code-scan.png" alt="qrcode" class="w-1/2 m-auto mb-10">
+                <!-- <img src="https://img.icons8.com/hands/100/000000/experimental-qr-code-hands.png" /> -->
+            </div>
         </div>
     </main>
 </body>

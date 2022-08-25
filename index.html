@@ -60,7 +60,7 @@
                 <p class="text-sm mb-5">
                     Enter your URL below to generate a QR Code and download the image.
                 </p>
-                <form id="generator-form" class="" mt-4>
+                <form id="generate-form" class="" mt-4>
                     <input id="url" type="url" placeholder="輸入連結 (Enter a URL)"
                         class="w-full border-2 border-grey-200 rounded p-3 text-grey-dark mr-2 focus:outline-none mb-5" />
                     <select id="size"
@@ -86,7 +86,7 @@
         </div>
 
         <!-- Generated QR code-->
-        <div class="max-x-5xl m-auto flex flex-col text-center align-center justify-center mt-20">
+        <div id="generated" class="max-x-5xl m-auto flex flex-col text-center align-center justify-center mt-20">
             <!-- Spinner -->
             <div id="spinner" role="status">
                 <svg class="inline mr-2 w-24 h-24 text-gray-200 animate-spin dark:text-gray-600 fill-green-600"
